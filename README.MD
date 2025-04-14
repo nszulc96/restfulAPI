@@ -14,4 +14,6 @@ O Boa Compra é um sistema simples que permite cadastrar, editar, excluir e list
 - **HTML5**: Estrutura básica da página web.
 - **CSS**: Para o design básico da interface.
 
-![Estrutura](image.png)
+## 🚀 Preview
+
+![preview estoque](image-1.png)
