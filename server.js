@@ -5,13 +5,12 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-// Middleware
 app.use(express.json());
 app.use(express.static('public'));
 
-const caminhoProdutos = path.join(__dirname, 'produtos.js');
+const caminhoProdutos = path.join(__dirname, 'public', 'data', 'produtos.js');
 
-let produtos = require('./produtos');
+let produtos = require('./public/data/produtos');
 
 function salvarProdutosNoArquivo() {
   const conteudo = `module.exports = ${JSON.stringify(produtos, null, 2)};\n`;
