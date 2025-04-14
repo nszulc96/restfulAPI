@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Boa Compra - Relatório de Vendas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+  <h1>Boa Compra - Estoque de Produtos</h1>
+
+  <form id="form-produto">
+    <fieldset>
+      <legend>Inserir Estoque</legend>
+      <input type="text" name="descricao" id="descricao" placeholder="Descrição" required>
+      <input type="text" name="modelo" id="modelo" placeholder="Modelo" required>
+      <input type="text" name="marca" id="marca" placeholder="Marca" required>
+      <input type="text" name="valor_custo" id="valor_custo" placeholder="Valor de Custo" required">
+      <input type="text" name="valor_venda" id="valor_venda" placeholder="Valor de Venda" required">
+      <input type="date" name="data_venda" id="data_venda" required>
+      <select name="tipo_loja" id="tipo_loja" required>
+        <option value="">Tipo de Loja</option>
+        <option value="online">Online</option>
+        <option value="física">Física</option>
+      </select>
+      <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade" required>
+      <button type="submit">Adicionar Produto</button>
+    </fieldset>
+  </form>
+
+  <div class="filtros">
+    <fieldset>
+      <legend>Filtros de Busca</legend>
+      <input type="text" id="filtro-busca" placeholder="Buscar por descrição, marca ou modelo">
+      <input type="date" id="filtro-data-inicio">
+      <input type="date" id="filtro-data-fim">
+      <button type="button" onclick="carregarProdutos()">Filtrar</button>
+    </fieldset>
+  </div>
+
+  <table id="tblProds">
+    <thead>
+      <tr>
+        <th>Descrição</th>
+        <th>Modelo</th>
+        <th>Marca</th>
+        <th>Custo</th>
+        <th>Venda</th>
+        <th>Data</th>
+        <th>Loja</th>
+        <th>Quantidade</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabela-produtos"></tbody>
+  </table>
+</body>
+
+</html>
