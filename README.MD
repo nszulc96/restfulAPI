@@ -1,4 +1,4 @@
-# Boa Compra - Relatório de Vendas
+# Boa Compra - Estoque de Produtos
 
 Bem-vindo ao Boa Compra! 🛒💻 Este é um projeto simples que foi criado como parte de um treino e estudo para aplicar conceitos de Node.js, API RESTful, JavaScript e Máscaras de Entrada para um sistema de relatórios de vendas de produtos de informática.
 
