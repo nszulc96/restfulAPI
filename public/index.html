@@ -3,7 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema de controle de estoque de produtos">
+  <meta name="keywords" content="estoque, produtos, controle, loja">
+  <meta name="author" content="Nicole Szulc">
+  <meta name="robots" content="index, follow">
+
   <title>Boa Compra - Estoque de Produtos</title>
+
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -14,18 +21,30 @@
   <form id="form-produto">
     <fieldset>
       <legend>Inserir Estoque</legend>
+
       <input type="text" name="descricao" id="descricao" placeholder="Descrição" required>
+
       <input type="text" name="modelo" id="modelo" placeholder="Modelo" required>
+
       <input type="text" name="marca" id="marca" placeholder="Marca" required>
-      <input type="text" name="valor_custo" id="valor_custo" placeholder="Valor de Custo" required">
-      <input type="text" name="valor_venda" id="valor_venda" placeholder="Valor de Venda" required">
+
+      <input type="text" name="valor_custo" id="valor_custo" placeholder="Valor de Custo" required
+         onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+      <input type="text" name="valor_venda" id="valor_venda" placeholder="Valor de Venda" required
+        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
       <input type="date" name="data_venda" id="data_venda" required>
+
       <select name="tipo_loja" id="tipo_loja" required>
         <option value="">Tipo de Loja</option>
         <option value="online">Online</option>
         <option value="física">Física</option>
       </select>
-      <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade" required>
+
+      <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade" required
+        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
       <button type="submit">Adicionar Produto</button>
     </fieldset>
   </form>

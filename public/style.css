@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 30px;
-  background: #f4f4f4;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
 }
 
 h1 {
   text-align: center;
-  color: #2e7d32;
+  color: #0a139b;
 }
 
 form {
@@ -23,7 +23,7 @@ input, select, button {
 }
 
 button {
-  background-color: #2e7d32;
+  background-color: #07b66d;
   color: white;
   cursor: pointer;
 }
@@ -36,7 +36,7 @@ table {
 
 th, td {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #a5742b;
   text-align: center;
 }
 .filtros {
