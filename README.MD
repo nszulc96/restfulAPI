@@ -16,4 +16,4 @@ O Boa Compra é um sistema simples que permite cadastrar, editar, excluir e list
 
 ## 🚀 Preview
 
-![preview estoque](image-1.png)
+![preview sistema](image.png)
